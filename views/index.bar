@@ -1,0 +1,23 @@
+<h2>To-Do's</h2>
+
+{{#if todos.length}}
+    <ul>
+        {{#each todos}}
+            <li class="todo">
+                <label>
+                    {{#if completed}}
+                        <input type="checkbox" checked>
+                        <span>{{title}}</span>
+                    {{else}}
+                        <input type="checkbox">
+                        <span>{{title}}</span>
+                    {{/if}}
+                    
+                    <button class="btn btn-small>Save</button>
+                </label>
+            </li>
+        {{/each}}
+    <ul>
+{{else}}
+<p>You are so lucky, you have nothing to do!</p>
+{{/if}}
