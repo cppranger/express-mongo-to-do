@@ -4,7 +4,7 @@ const exphandbar = require('express-handlebars')
 const todoRoutes = require('./routes/todos')
 
 const PORT = process.env.PORT || 3000
-const mongo_connect = 'mongodb+srv://purp13:162534@test.ieldj.mongodb.net/to-do'
+const mongo_connect = '<mongo_config_here>'
 const app = express()
 const bar = exphandbar.create({
     defaultLayout: 'main',
